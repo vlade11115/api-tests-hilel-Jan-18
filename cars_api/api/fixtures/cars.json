@@ -1,0 +1,22 @@
+[
+  {
+    "model": "api.cartype",
+    "pk": 1,
+    "fields": {
+      "name": "X5",
+      "brand": "BMW",
+      "price": 42
+    }
+  },
+  {
+    "model": "api.car",
+    "pk": 1,
+    "fields": {
+      "car_type": 1,
+      "color": "Red",
+      "year": 2010,
+      "blocked_by_order": null,
+      "owner": null
+    }
+  }
+]
