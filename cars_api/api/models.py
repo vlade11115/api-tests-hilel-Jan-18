@@ -55,7 +55,7 @@ class Dealership(models.Model):
 
 class Order(models.Model):
     client = models.ForeignKey(User, on_delete=models.CASCADE, related_name="orders")
-    dealership = models.ForeignKey(Dealership, on_delete=models.CASCADE, related_name="orders")
+    # dealership = models.ForeignKey(Dealership, on_delete=models.CASCADE, related_name="orders")
     is_paid = models.BooleanField(default=False)
     url = models.CharField(max_length=200)
 

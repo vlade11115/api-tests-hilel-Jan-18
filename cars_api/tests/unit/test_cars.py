@@ -9,8 +9,7 @@ class TestCarsAPI(APITransactionTestCase):
     def test_cars_list(self):
         response = self.client.get("/api/cars/")
         assert response.status_code == 200
-        assert "cars" in response.json()
-        assert response.json()["cars"] == [
+        assert response.json()["results"] == [
             {
                 "id": 1,
                 "year": 2010,

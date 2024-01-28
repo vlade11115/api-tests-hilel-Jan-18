@@ -10,5 +10,7 @@ class CarSerializer(serializers.ModelSerializer):
         depth = 1
 
 
-class OrderSerializer(serializers.Serializer):
-    url = serializers.CharField(max_length=200)
+class OrderSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Order
+        fields = '__all__'
